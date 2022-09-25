@@ -43,8 +43,21 @@ See also the list of [contributors](https://github.com/StartFuture/start-future-
 
 ## Task-List
 
-- [ ] Create Basic Setup with Fast-API
+- [X] Create Basic Setup with Fast-API
+- [X] Draw db
+  - [X] TB Formulario
+  - [X] TB Alunos
+  - [X] TB Bootcamps
+  - [X] TB Certificados
+- [X] Create db ddl
+- [X] Sample inserts db
+- [ ] Development EndPoints
+  - [ ] students
+  - [ ] departments
+  - [ ] bootcamps
+  - [ ] certificates
+  - [ ] forms
+  - [ ] classroom
 - [ ] Test endpoints with Fast-API
-- [ ] Create authentication DB
 - [ ] Connect with DB
 - [ ] Deploy on PythonAnywhere
