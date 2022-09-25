@@ -65,10 +65,8 @@ class StudentDAO:
                         select nome, rm, telefone, email, cep from alunos
                         where id = '{id}'
                         ;'''
-                print(query)
                 cursor.execute(query)
                 content = cursor.fetchone()
-                print(content)
             except Exception as erro:
                 status_valid = False
                 content = None
