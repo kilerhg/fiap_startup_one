@@ -3,6 +3,7 @@ from typing import Optional # this Optional is complete up to you, just to make 
 from models import request_body
 
 import parameters
+import manager
 # uvicorn app:app --reload
 
 app = FastAPI()
@@ -15,13 +16,18 @@ def index():
 def health():
     return {"message": "Aplication is healthy"}, 200
 
-@app.get("/students")
-def show_students():
-    return {"message": "students"}, 200
+@app.get("/students/{id}")
+def show_students(id: int):
+    content, status_valid = manager.get_user_by_id(id)
+    return {"message": "students", "content":content}, 200
 
 @app.post("/students")
 def create_student(student: request_body.Student):
-    return {"message": "students"}, 200
+    status_valid = manager.create_student(student)
+    if status_valid:
+        return {"message": "Student created"}, 200
+    else:
+        return {"message": "Student cannot be created"}, 400
 
 @app.get("/departments")
 def show_departments():

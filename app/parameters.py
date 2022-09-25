@@ -6,6 +6,9 @@ load_dotenv()
 
 API_NAME = os.environ['API_NAME']
 API_SECRET_KEY = os.environ['API_SECRET_KEY']
+
+DB_NAME = os.environ['DB_NAME']
+DB_SCHEMA = os.environ['DB_SCHEMA']
 DB_HOST = os.environ['DB_HOST']
 DB_USERNAME = os.environ['DB_USERNAME']
 DB_PASSWORD = os.environ['DB_PASSWORD']

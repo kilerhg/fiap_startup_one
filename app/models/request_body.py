@@ -32,3 +32,6 @@ class Classroom(BaseModel):
     id_bootcamp : int
     id_student : int
     id_area : int
+
+class Id(BaseModel):
+    id : int
