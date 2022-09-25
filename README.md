@@ -51,7 +51,7 @@ See also the list of [contributors](https://github.com/StartFuture/start-future-
   - [X] TB Certificados
 - [X] Create db ddl
 - [X] Sample inserts db
-- [ ] Development EndPoints
+- [ ] Development EndPoints CRUD
   - [ ] students
   - [ ] departments
   - [ ] bootcamps
