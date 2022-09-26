@@ -14,7 +14,7 @@ class Departments(BaseModel):
 
 class Bootcamp(BaseModel):
     name : str
-    date_start : int
+    date_start : str
     date_end : str
 
 class Certificate(BaseModel):
@@ -26,12 +26,9 @@ class Form(BaseModel):
     cellphone : Optional[str]
     email : str
     cep : str
-    area_interesse : int
+    interested_deparment : int
 
 class Classroom(BaseModel):
     id_bootcamp : int
     id_student : int
-    id_area : int
-
-class Id(BaseModel):
-    id : int
+    id_department : int

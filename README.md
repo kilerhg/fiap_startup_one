@@ -52,13 +52,16 @@ See also the list of [contributors](https://github.com/StartFuture/start-future-
 - [X] Create db ddl
 - [X] Sample inserts db
 - [X] Development of generic CRUD
+- [X] Connect with DB
 - [X] Development EndPoints CRUD
   - [X] students
-  - [ ] departments
-  - [ ] bootcamps
-  - [ ] certificates
-  - [ ] forms
-  - [ ] classroom
-- [ ] Test endpoints with Fast-API
-- [ ] Connect with DB
-- [ ] Deploy on PythonAnywhere
+  - [X] departments
+  - [X] bootcamps
+  - [X] certificates
+    - [ ] Create left join query
+  - [X] forms
+    - [ ] Create left join query
+  - [X] classroom
+    - [ ] Create left join query
+- [X] Test endpoints with Fast-API
+- [ ] Deploy on ?
