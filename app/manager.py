@@ -36,7 +36,7 @@ def get_all_bootcamp():
 ###
 
 def create_certificates(certificate : request_body.Certificate):
-    status_valid = postgres_dao.CertificateDAO.create_cerificate(certificate)
+    status_valid = postgres_dao.CertificateDAO.create_certificate(certificate)
     return status_valid
 
 def get_all_certificates():
