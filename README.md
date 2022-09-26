@@ -20,7 +20,7 @@ Installing Requirements:
 
 ## Run
 
-Open Your favorite terminal and run: ```cd app && uvicorn app:app```
+Open Your favorite terminal and run: ```cd app && python3 -m uvicorn app:app```
 
 ## Built With
 
