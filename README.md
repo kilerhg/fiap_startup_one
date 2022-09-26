@@ -10,36 +10,22 @@ Logic and Infra of Start Future
 
 Clone This Repository:
 
-```git clone https://github.com/StartFuture/start-future-backend.git```
+```git clone https://github.com/kilerhg/fiap_startup_one.git```
 
 Go to repository:
-```cd start-future-backend```
+```cd fiap_startup_one```
 
 Installing Requirements:
 ```pip install -r requirements.txt```
 
 ## Run
 
-Open Your favorite terminal and run: ```python main.py```
+Open Your favorite terminal and run: ```cd app && uvicorn app:app```
 
 ## Built With
 
 * [FAST-API](https://fastapi.tiangolo.com/)
-
-## Contributing
-
-
-* We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/StartFuture/start-future-backend/tags).
-
-## Authors
-
-* Lucas Nunes - Initial work
-
-See also the list of [contributors](https://github.com/StartFuture/start-future-backend/contributors) who participated in this project.
-
-## License
-
-* This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details
+* [POSTGRESQL](https://www.postgresql.org/)
 
 ## Task-List
 
@@ -58,10 +44,7 @@ See also the list of [contributors](https://github.com/StartFuture/start-future-
   - [X] departments
   - [X] bootcamps
   - [X] certificates
-    - [ ] Create left join query
   - [X] forms
-    - [ ] Create left join query
   - [X] classroom
-    - [ ] Create left join query
 - [X] Test endpoints with Fast-API
-- [ ] Deploy on ?
+- [X] Deploy on AWS: EC2 and RDS
