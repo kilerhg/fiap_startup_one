@@ -9,7 +9,7 @@ class Student(BaseModel):
     cep : int
 
 class Departments(BaseModel):
-    id : str
+    id : int
     name : str
 
 class Bootcamp(BaseModel):

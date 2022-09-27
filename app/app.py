@@ -5,7 +5,7 @@ from models import request_body
 import parameters
 import manager
 # uvicorn app:app --reload
-# gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+# gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app
 
 app = FastAPI(
     title="Atividade RESTFull FIAP, grupo MVBLR",
