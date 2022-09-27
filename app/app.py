@@ -5,8 +5,12 @@ from models import request_body
 import parameters
 import manager
 # uvicorn app:app --reload
+# gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
 
-app = FastAPI()
+app = FastAPI(
+    title="Atividade RESTFull FIAP, grupo MVBLR",
+    description="atividade para FIAP, entrega de webservice restfull com conexão ao banco de dados"
+)
 
 @app.get("/")
 def index():
